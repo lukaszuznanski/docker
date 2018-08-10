@@ -1,4 +1,4 @@
-version: '2'
+version: '3.0'
 services:
   sinusbot:
     image: sinusbot/docker
@@ -8,8 +8,7 @@ services:
     volumes:
       - ./scripts:/opt/sinusbot/scripts
       - ./data:/opt/sinusbot/data
-    networks:
-      - ts3_ts3
 networks:
-  ts3_ts3:
-    external: true
+  default:
+    external:
+      name: ts3_ts3
