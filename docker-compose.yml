@@ -8,7 +8,7 @@ services:
     volumes:
       - ./scripts:/opt/sinusbot/scripts
       - ./data:/opt/sinusbot/data
-    network:
+    networks:
       - ts3_ts3
 networks:
   ts3_ts3:
